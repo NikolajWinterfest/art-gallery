@@ -1,0 +1,11 @@
+.products__loading {
+  padding-top: 20px;
+}
+
+.products__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 25px;
+}

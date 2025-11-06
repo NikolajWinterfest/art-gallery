@@ -1,0 +1,26 @@
+.head-title {
+  margin-bottom: 25px;
+  font-size: 69px;
+  color: #c01b1b;
+  text-align: center;
+}
+
+.filter-products__btn {
+  padding-bottom: 25px;
+  font-size: 20px;
+}
+
+.filter-products {
+  text-align: center;
+}
+
+.create-product {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.create-product__btn {
+  width: 100%;
+  max-width: 300px;
+}
