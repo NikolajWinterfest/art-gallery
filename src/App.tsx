@@ -6,7 +6,7 @@ import CreateProductPage from './pages/CreateProductPage'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/art-gallery">
       <Routes>
         <Route index path="/" element={<HomePage />} />
         <Route path="/products" element={<HomePage />} />

@@ -1,73 +1,59 @@
-# React + TypeScript + Vite
+## О проекте
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div>
+  <img src="/Artworks.png" title="Artworks" alt="Artworks" />&nbsp;
+</div>
 
-Currently, two official plugins are available:
+### Цель проекта:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Создать SPA со списком карточек
 
-## React Compiler
+### Задачи проекта:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+#### Frontend:
 
-## Expanding the ESLint configuration
+– Реализация страницы со списком продуктов /products с карточками товаров
+– Добавление функционала лайков (избранное) и удаления карточек
+– Реализация фильтрации карточек (все / избранные)
+– Обрезка текста карточек для выравнивания высоты
+– Переход на детальную страницу продукта по клику на карточку
+– Создание страницы продукта /products/:id с подробной информацией и кнопкой возврата
+– Разработка страницы создания продукта /create-product с формой и минимальной валидацией
+– Сохранение созданных продуктов в общий store (Redux)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Технологии
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+<div>
+  <img src="https://github.com/NikolajWinterfest/NikolajWinterfest/blob/master/assets/icons/React.svg" title="react" alt="react" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/NikolajWinterfest/NikolajWinterfest/blob/master/assets/icons/Vite.svg" title="vite" alt="vite" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/NikolajWinterfest/NikolajWinterfest/blob/master/assets/icons/TypeScript.svg" title="typescript" alt="typescript" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/NikolajWinterfest/NikolajWinterfest/blob/master/assets/icons/HTML.svg" title="html5" alt="html5" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/NikolajWinterfest/NikolajWinterfest/blob/master/assets/icons/CSS.svg" title="css3" alt="css3" width="40" height="40"/>&nbsp;
+  <img src="https://github.com/NikolajWinterfest/NikolajWinterfest/blob/master/assets/icons/Git.svg" title="git" alt="git" width="40" height="40"/>&nbsp;
+</div>
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Запуск проекта
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Склонировать проект на ваш компьютер с Github с помощью команды:
+
+```
+git clone https://github.com/NikolajWinterfest/art-gallery.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Открыть отдельно папки «server» и «frontend» и установить зависимости с помощью команды
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```
+npm install
+```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Запустить из папки «frontend» проект с помощью команды
+
+```
+npm run dev
+```
+
+### Собрать проект с помощью команды
+
+```
+npm run build
 ```
